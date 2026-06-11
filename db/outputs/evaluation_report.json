@@ -1,0 +1,51 @@
+{
+  "sentiment_evaluation": {
+    "Naive Bayes": {
+      "Accuracy": 0.6332,
+      "F1": 0.5992,
+      "Precision": 0.5966,
+      "Recall": 0.6332
+    },
+    "Logistic Regression": {
+      "Accuracy": 0.6256,
+      "F1": 0.5539,
+      "Precision": 0.6363,
+      "Recall": 0.6256
+    }
+  },
+  "topic_evaluation": {
+    "best_k": 9,
+    "silhouette_score": 0.0073,
+    "avg_coherence": 0.0423,
+    "zero_shot_topics": {
+      "gaming and entertainment": 670,
+      "politics and government": 398,
+      "world news and current events": 294,
+      "movies and film": 192,
+      "science and research": 175,
+      "business and economy": 150,
+      "technology and software": 87,
+      "artificial intelligence and machine learning": 23
+    },
+    "avg_confidence": 0.2721
+  },
+  "retrieval_evaluation": {
+    "avg_precision_at_k": {
+      "P@1": 0.6,
+      "P@3": 0.6,
+      "P@5": 0.68,
+      "P@10": 0.66
+    },
+    "avg_recall_at_k": {
+      "R@1": 0.6,
+      "R@3": 0.6,
+      "R@5": 0.68,
+      "R@10": 0.66
+    }
+  },
+  "summarisation_evaluation": {
+    "avg_rouge1": 0.0973,
+    "avg_rouge2": 0.0012,
+    "avg_rougeL": 0.0531
+  }
+}

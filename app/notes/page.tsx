@@ -1,7 +1,0 @@
-import { Navigation } from '@/components/navigation'
-import { Footer } from '@/components/footer'
-import { technicalNotes } from '@/src/data/note-content'
-
-export default function NotesIndexPage() {
-  return <><Navigation /><main className="px-6 pb-24 pt-28 lg:px-8"><div className="mx-auto max-w-5xl"><a href="/#notes" className="font-mono text-xs uppercase tracking-[0.18em] text-accent">← Back home</a><header className="mt-10 max-w-3xl"><p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">Research and Engineering Notes</p><h1 className="mt-5 text-balance font-heading text-5xl tracking-tight text-foreground sm:text-6xl">Write down the decisions that shape the evidence.</h1><p className="mt-6 text-lg leading-relaxed text-muted-foreground">Notes on quantum-device characterisation, reliability, learning signals, retrieval evaluation, and research method — written to expose reasoning, not pad the portfolio.</p></header><div className="mt-12 grid gap-5">{technicalNotes.map((note) => <a key={note.slug} href={`/notes/${note.slug}/`} className="premium-surface p-6 transition-colors hover:border-accent/40 hover:bg-card/90"><p className="font-mono text-[10px] uppercase tracking-[0.16em] text-accent">{note.readTime}</p><h2 className="mt-3 text-xl font-medium text-foreground">{note.title}</h2><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{note.dek}</p></a>)}</div></div></main><Footer /></>
-}
